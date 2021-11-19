@@ -245,7 +245,7 @@ class CAREER {
 			<h4>Candidate Information</h4>
 		  	<p>Name: {$name}</p>
 		  	<p>Email: {$name}</p>
-		  	<p>Phone Number: {$name}</p>
+		  	<p>Phone Number: {$phone}</p>
 		  	<p>Position: {$position}</p>
 		";
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
