@@ -24,12 +24,16 @@ jQuery(document).ready(function($) {
 					'id_level': id_level
 				},
 				dataType: 'JSON',
+				beforeSend: function() {
+					$('.e-loading').css('display', 'flex');
+				},
 				success: function(data) {
 					$('.list-job .col-md-12').html(data.html);
 					$('.career-result-text b').text(data.num_record);
 					change_data_pagination();
 					pagination();
 					open_apply();
+					$('.e-loading').hide();
 				}
 			});
 
@@ -73,6 +77,9 @@ jQuery(document).ready(function($) {
 				type: 'POST',
 				data: formData + '&action=e_apply_form',
 				dataType: 'text',
+				beforeSend: function() {
+					$('.e-loading').css('display', 'flex');
+				},
 				success: function(data) {
 					_self.find('input:not(.your-position)').val('');
 					
@@ -81,6 +88,8 @@ jQuery(document).ready(function($) {
 					} else {
 						_self.append('<div class="alert alert-danger" role="alert">Error. Please try again!</div>');
 					}
+
+					$('.e-loading').hide();
 				}
 			});
 

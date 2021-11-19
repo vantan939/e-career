@@ -91,6 +91,10 @@
 	<?php endif; wp_reset_postdata(); ?>
 </section>
 
+<div class="e-loading">
+	<img src="<?php echo CAREER_PLUGIN_ASSETS_URL; ?>/images/loading.gif" />
+</div>
+
 <div class="job-popup" style="display: none;">
 	<div class="popup-content">
 		<div class="close-icon">x</div>
