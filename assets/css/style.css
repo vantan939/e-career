@@ -1,0 +1,99 @@
+.page-template-template-career {
+	font-size: 15px;
+}
+.page-template-template-career header,
+.page-template-template-career footer {
+	display: none;
+}
+.e-career {
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+.e-career button,
+.job-popup button {
+    outline: none !important;
+}
+.e-career .career-filter {
+	overflow: hidden;
+}
+.e-career .career-filter select {
+	height: 40px;
+}
+.e-career .career-filter button {
+	width: 100%;
+    height: 40px;
+}
+.e-career .career-result-text {
+	margin-top: 40px;
+	overflow: hidden;
+}
+.e-career .list-job {
+	overflow: hidden;
+}
+.e-career .list-job .job-item {
+	border: 1px solid #ccc;
+	display: flex;
+	padding: 25px;
+	align-items: center;
+	margin-top: 40px;
+}
+.e-career .list-job .job-item .job-item-info p {
+	margin-bottom: 5px;
+}
+.e-career .list-job .job-item .job-item-info .name-job {
+	font-weight: bold;
+	font-size: 17px;
+}
+.e-career .list-job .job-item .job-item-apply {
+	margin-left: auto;
+}
+.e-career #wrap-pagination {
+	margin-top: 40px;
+}
+.job-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow-y: auto;
+}
+body.has-modal {
+	overflow: hidden;
+}
+body.has-modal:before {
+	position: fixed;
+	z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    content: '';
+}
+.job-popup .popup-content {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    position: relative;
+    padding: 35px;
+}
+.job-popup .popup-content h4 {
+	margin-top: 30px;
+	font-weight: bold;
+}
+.job-popup .popup-content .job-desc h4:first-child {
+	margin-top: 0;
+}
+.job-popup .popup-content form {
+	margin-top: 15px;
+}
+.job-popup .popup-content .close-icon {
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    top: 10px;
+    cursor: pointer;
+}
