@@ -251,7 +251,7 @@ class CAREER {
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
-		$result = mail($to, $subject, $message, $headers);
+		$result = wp_mail($to, $subject, $message, $headers);
 		if(!$result) {   
 	     	echo 0;   
 		} else {
